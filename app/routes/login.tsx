@@ -2,7 +2,6 @@ import type { ActionArgs, LoaderArgs, MetaFunction } from "@remix-run/node";
 import { json, redirect } from "@remix-run/node";
 import { Form, useActionData, useSearchParams } from "@remix-run/react";
 import * as React from "react";
-
 import { createUserSession, getUserId } from "~/session.server";
 import { createUser, getUserByEmail, verifyLogin } from "~/models/user.server";
 import { safeRedirect, validateEmail } from "~/utils";
